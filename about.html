@@ -1,0 +1,85 @@
+---
+title: About the Pupper
+description: >-
+No, it has nothing to do with PuppyLinux.
+---
+
+<h1> About the Pupper</h1>
+
+<strong>GoldenDog Linux</strong> is a Linux Workstation that aims to be friendly, simple to use and yet provide all the integrity, stability and reliability<br/>
+that a platform like <strong>Debian Stable</strong> has to offer. <br/><br/>
+
+<h3>Why Debian?</h3>
+
+There were a few reasons why. Primarily because I had been a Debian user for most part of my life, starting around 2004, and had used it as my daily driver up until the year 2019 where I started
+using Fedora too. These 15 years of experience made me very familiar with how this operating system works. <br/>
+
+GoldenDog is not the only work that uses Debian as platform. Many popular systems such as Ubuntu, Mint and Kali use it too. This is because at its core, it's very meticulously planned and maintained, making it
+an excellent choice for a reliable engine that adapts to almost every case of use.<br/><br/>
+
+Debian also encourages derivative works that use their software to use their official mirrors. This is why GoldenDog runs exclusively official debian software and mirrors, taking advantage of the frequent updates
+and patches that Debian provides, specially since this is a one-woman project that I work on when time allows, and I could not be packaging thousands of .deb packages all by myself on a regular basis, using only official
+debian packages makes everyone happy.
+
+<h3>Technical Details</h3>
+
+<h4>Minimum Settings</h4>
+<ul>
+<li>Memory: 2GB</li>
+<li>CPU Cores: 2</li>
+<li>Disk Space: 50GB</li>
+</ul>
+<h4>Recommended Settings</h4>
+<ul>
+<li>Memory: 8GB</li>
+<li>CPU Cores: 4</li>
+<li>Disk Space: 120GB</li>
+</ul>
+
+<h4>Video Support</h4>
+GoldenDog uses Debian's driver modules, so both support for NVIDIA and AMD GPUs are available
+In a terminal window type:
+<p>For NVIDIA: <code>sudo gdl install nvidia-driver</code></p>
+<p>For AMD: <code>sudo gdl install amdgpu</code></p>
+
+<h4>Snap and Flatpak Support</h4>
+By default neither flatpak nor snap are installed. 
+They can be installed easily via gdl/apt from a terminal window.
+
+<p>For Snapd: <code>sudo gdl install snapd</code></p>
+<p>For Flatpak: <code>sudo gdl install flatpak</code></p>
+
+<h4>gdl/apt package manager</h4>
+
+Right now GDL uses the APT package manager. At this point gdl is merely an alias for apt. You can use them interchangeably.
+
+<h4>goldendog-update</h4> 
+This command is a text user interface that lists packages that could be upgraded and lets you pick them individually. It might be 
+useful for when you don't want to perform a full upgrade and select specific packages instead, for when, for instance, you want to avoid upgrading to a certain kernel 
+version or anything.
+
+<h2>Help and Support</h2>
+Right now all support is handled via github issue tickets. Please visit <a href="https://github.com/goldendoglinux/support/issues">https://github.com/goldendoglinux/support/issues</a><br/>
+Support is volunteer-driven, so please be patient for a reply, and be kind to those offering support. Thank you!
+
+<p> Alternatively, you can visit the <a href="/community/">Community Section</a> to learn how to connect to my <strong>Discord</strong> server, and/or GoldenDog official IRC channel </p>
+
+
+<h3>I am curious about the name, the story behind and your other projects and volunteering</h3>
+
+To learn more about how the project came to be, the other projects I volunteer for, such as <strong>RockyLinux</strong> and <strong>OpenInfra</strong> Check out <a href="https://lexi.lat">My Blog (in Spanish)</a>
+or the <a href="/news">News Section</a> where I will be posting articles, thoughts, anecdotes and things related to Open Source and Linux in general regularly. <br/><br/><br/>
+
+
+
+<p><strong>Have fun using Goldendog!!</strong></p>
+ <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> 
+Manage Staff members</a></p> <ul class="staff">
+	{% for person in site.staff_members %}
+		<li>
+			<div class="square-image"><img src="{% include relative-src.html src=person.image_path %}" alt="{{ person.name }}"/></div>
+			<div class="name"><a target="_blank" href="https://twitter.com/{{ person.twitter }}">{{ person.name }}</a></div>
+			<div class="position">{{ person.position }}</div>
+		</li>
+	{% endfor %}
+</ul>
