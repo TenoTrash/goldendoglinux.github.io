@@ -1,24 +1,25 @@
-- name: About
-  link: /about/
+# Spanish
+- name: Acerca de
+  link: /es/about/
   new_window: false
   highlight: false
-- name: News
-  link: /blog/
+- name: Noticias
+  link: /es/blog/
   new_window: false
   highlight: false
-- name: Download
-  link: /download/
+- name: Descargas
+  link: /es/download/
   new_window: false
   highlight: true
-- name: Community
-  link: /community/
+- name: Comunidad
+  link: /es/community
   new_window: false
   highlight: false
-- name: Documentation
-  link: /docs/
+- name: Documentación
+  link: /es/docs/
   new_window: false
   highlight: false
 - name: Discord
-  link: /discord/
+  link: /es/discord/
   new_window: false
   highlight: false
