@@ -67,7 +67,6 @@ defaults:
     values:
       layout: "docs"
 
-
 jekyll-archives:
   enabled:
     - categories
